@@ -32,5 +32,17 @@ public class ConfigDataProvider {
 	public String getUrl() {
 		return pro.getProperty("TestURL");
 	}
-
+	
+	public String getOrgID() {
+		return pro.getProperty("OrganisationID");
+		
+	}
+	public String getUsrname() {
+		return pro.getProperty("UserName");
+	}
+	
+	public String getpassword() {
+		return pro.getProperty("Password");
+	}
+		
 }

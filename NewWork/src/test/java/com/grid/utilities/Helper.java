@@ -17,7 +17,7 @@ public class Helper {
 	public static void CaptureScreenshot(WebDriver driver) {
 		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		try {
-			FileHandler.copy(src,new File("./Screenshots/noBroker"+getCurrentDateTime()+".png"));
+			FileHandler.copy(src,new File("./ScreenShot/noBroker"+getCurrentDateTime()+".png"));
 			
 			System.out.println("Screenshot captured");
 		} catch (IOException e) {
